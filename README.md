@@ -10,15 +10,17 @@ On utilise les images officielles mysql:latest et phpmyadmin:latest \
 Consignes: \
 1 - cloner le dépot, \
 2 - Copier les dumps dans le répertoire "share", \
-3 - exécuter un bash dans le container, \
-4 - créer une base de données vierge, \
-5 - lancer l'import de la base, \
-6 - la visualiser dans PHPMyadmin. \
+3 - exécuter le docker-compose, \
+4 - exécuter un bash dans le container, \
+5 - créer une base de données vierge, \
+6 - lancer l'import de la base, \
+7 - la visualiser dans PHPMyadmin. \
  \
 Prenons l'exemple d'une base de données exemple.sql: \
 ```
 git clone https://github.com/MrNonoss/fsql.git
-mv exemple.sql fsql/share/
+mv exemple.sql fsql/share/ && cd fsql
+docker-compose up -d
 sudo docker exec -ti mysql /bin/bash
 mysql
 CREATE DATABASE exemple;
