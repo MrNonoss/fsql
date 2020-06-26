@@ -1,7 +1,7 @@
 Voici un template tout fait pour importer facilement et rapidement des dumps MySQL. \
 
 Attention, ici, rien n'est sécurisé, ce n'est pas destiné à une utilisation en production, mais juste pour pouvoir remonter un dump MySQL facilement lors d'une analyse et le visualiser avec PHPMyadmin.
-Ici, il n'y a aucun mot de passe, alors protégez votre instance qui ne doit pas être accéssible depuis le net. \
+Il n'y a aucun mot de passe, alors protégez votre instance qui ne doit pas être accessible depuis le net. \
  \
 On utilise les images officielles mysql:latest et phpmyadmin:latest \
  \
