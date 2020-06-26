@@ -13,8 +13,9 @@ Consignes: \
 3 - exécuter le docker-compose, \
 4 - exécuter un bash dans le container, \
 5 - créer une base de données vierge, \
-6 - lancer l'import de la base, \
-7 - la visualiser dans PHPMyadmin. \
+6 - sortir de la console mysql, \
+7 - lancer l'import de la base, \
+8 - la visualiser dans PHPMyadmin. \
  \
 Prenons l'exemple d'une base de données exemple.sql: \
 ```
@@ -24,6 +25,7 @@ docker-compose up -d
 sudo docker exec -ti mysql /bin/bash
 mysql
 CREATE DATABASE exemple;
+exit
 mysql -u root exemple < /home/share/exemple.sql
 ```
 Plus qu'à ouvrir son navigateur à l'adresse http://localhost et se connecter avec l'user root, sans mot de passe
